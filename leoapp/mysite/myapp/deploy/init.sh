@@ -9,7 +9,8 @@ rpm -qa |grep -i mysql-server || yum install -y mysql*
 
 #git clone leoapp to /home/ruby
 [ ! -d "/home/ruby/" ] && mkdir /home/ruby;
-[ ! -d "leoapp" ] && git clone git@github.com:yeziyitao/leoapp.git
+
+[ ! -d "leoapp" ] && git clone git@github.com:yeziyitao/leoapp.git /home/ruby/leoapp;
 
 #init mysql ;
 mysql -e "drop database IF EXISTS myapp_development";
